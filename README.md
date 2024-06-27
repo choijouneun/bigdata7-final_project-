@@ -27,7 +27,7 @@
   ### 콘다 가상환경 만들기2 (나머지 패키지 설치)
   CMD 창 열고 아래와 같이 입력
   ```cmd
-  pip install pdf2image==1.17.0 opencv-python==4.9.0.80 numpy==1.26.4 pillow==10.3.0 fastapi==0.111.0 easyocr==1.7.1 pytesseract==0.3.10 pymupdf==1.20.0 glob2==0.7 pymysql==1.1.1
+  pip install pdf2image==1.17.0 opencv-python==4.9.0.80 numpy==1.26.4 pillow==10.3.0 fastapi==0.111.0 easyocr==1.7.1 pytesseract==0.3.10 pymupdf glob2==0.7 pymysql==1.1.1
   ```
 
   <br>
