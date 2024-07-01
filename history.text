@@ -1,0 +1,517 @@
+    1  docker
+    2  docker ps -a
+    3  docker run -p 8000:80 -t nginx
+    4  docker ps -a
+    5  docker rm b9
+    6  docker ps -a
+    7  docker run -d -p 8000:80 --name nginx-container nginx
+    8  docker ps -a
+    9  docker rm nginx-container
+   10  docker stop nginx-container
+   11  docker ps -a
+   12  docker rm nginx-container
+   13  docker ps -a
+   14  docker images
+   15  docker ps -a
+   16  docker run -d -p 8000:80 --name nginx-container nginx
+   17  docker ps -a
+   18  docker run -d -p 8000:80 --name nginx-container nginx
+   19  docker run -d -p 8000:80 --name nginx-container2 nginx
+   20  docker ps -a
+   21  docker rm nginx-container2
+   22  docker run -d -p 8001:80 --name nginx-container2 nginx
+   23  docker ps -a
+   24  docker logs nginx-container2
+   25  docker stop nginx-container2
+   26  docker rm nginx-container2
+   27  docker ps -a
+   28  docker rm -f nginx-container
+   29  docker ps -a
+   30  docker logs nginx-container
+   31  docker ps -a
+   32  docker stop nginx-container
+   33  docker rm nginx-container
+   34  docker ps -a
+   35  docker build -t nginx-img .
+   36  cd Desktop/빅데이터 7기/MLOps/1-1
+   37  cd Desktop
+   38  cd 빅데이터 7기
+   39  cd "빅데이터 7기"
+   40  cd MLOps/1-1
+   41  docker ps -a
+   42  docker build -t nginx-img .
+   43  docker run -d -p 80:80 --name nginx-container nginx-img
+   44  docker ps -a
+   45  docker stop nginx-container
+   46  docker rm nginx-container
+   47  docker ps -a
+   48  docker pull python:3.10.11
+   49  cd ../
+   50  cd 1-2
+   51  ls
+   52  cat Dockerfile 
+   53  ls
+   54  docker build -t pytha-test .
+   55  docker run -it pytha-test
+   56  docker ps -a
+   57  docker stop nice_poitras
+   58  docker rm nice_poitras
+   59  docker ps -a
+   60  ls
+   61  cd 1-1
+   62  ls
+   63  docker build -t nginx-img .
+   64  docker images
+   65  docker run -d -p 8000:80 --name nginx-container -t nginx-img
+   66  docker ps -a
+   67  export PIPELINE_VERSION=2.0.1
+   68  kubectl apply -k "github.com/kubeflow/pipelines/manifests/kustomize/cluster-scoped-resources?ref=$PIPELINE_VERSION"
+   69  kubectl wait --for condition=established --timeout=60s crd/applications.app.k8s.io
+   70  kubectl apply -k "github.com/kubeflow/pipelines/manifests/kustomize/env/dev?ref=$PIPELINE_VERSION"
+   71  kubectl get pods -n kubeflow
+   72  cd 3-1
+   73  cat kubeflow-service.yaml 
+   74  kubectl apply -f kubeflow-service.yaml 
+   75  kubectl get po -n default
+   76  kubectl get svc -n kubeflow
+   77  cd 4-1
+   78  cat Dockerfile 
+   79  docker build -t sunyoung1230/mf-model:0423 .
+   80  docker login
+   81  docker push sunyoung1230/mf-model:0423
+   82  kubectl apply -k "github.com/kubeflow/katib.git/manifests/v1beta1/installs/katib-standalone?ref=master"
+   83  export NAMESPACE=kubeflow
+   84  kubectl -n ${NAMESPACE} create rolebinding katib-editor --clusterrole=katib-controller --serviceaccount=${NAMESPACE}:default
+   85  kubectl get pots -n kubeflow
+   86  kubectl get pods -n kubeflow
+   87  cd ../4-2
+   88  ls
+   89  kubectl apply -f katib-service.yaml 
+   90  cd training
+   91  ls
+   92  docker build -t sunyoung1230/mf-model:0423 .
+   93  docker push -t sunyoung1230/mf-model:0423 .
+   94  docker push -t sunyoung1230/mf-model:0423
+   95  docker push sunyoung1230/mf-model:0423
+   96  k get po -A -w
+   97  alias k=kubectl
+   98  k get po -A -w
+   99  exit
+  100  cd 3-1
+  101  kubectl get pods -n kubeflow
+  102  alias k=kubectl
+  103  k get po -A
+  104  k delete ns kubeflow
+  105  export PIPELINE_VERSION=2.0.1
+  106  kubectl apply -k "github.com/kubeflow/pipelines/manifests/kustomize/cluster-scoped-resources?ref=$PIPELINE_VERSION"
+  107  kubectl wait --for condition=established --timeout=60s crd/applications.app.k8s.io
+  108  kubectl apply -k "github.com/kubeflow/pipelines/manifests/kustomize/env/dev?ref=$PIPELINE_VERSION"
+  109  k get po -n kubefow
+  110  k get po -n kubeflow
+  111  k delete deploy proxy-agent -n kubeflow
+  112  cd 4-2/training
+  113  ls
+  114  dorker push sunyoung1230/mf-model:0423
+  115  dorker build -t sunyoung1230/mf-model:0423 .
+  116  docker login
+  117  dorker build -t sunyoung1230/mf-model:0423 .
+  118  cat Dockerfile
+  119  dorker build -t sunyoung1230/mf-mocel:0423 .
+  120  dorker build -t sunyoung1230/mf-mocel:0424 .
+  121  docker build -t sunyoung1230/mf-model:0423 .
+  122  docker push sunyoung1230/mf-model:0423
+  123  docker build -t sunyoung1230/mf-model:0424 .
+  124  docker push sunyoung1230/mf-model:0424
+  125  kubectl apply -k "github.com/kubeflow/katib.git/manifests/v1beta1/installs/katib-standalone?ref=master"
+  126  export NAMESPACE=kubeflow
+  127  kubectl -n ${NAMESPACE} create rolebinding katib-editor --clusterrole=katib-controller --serviceaccount=${NAMESPACE}:default
+  128  docker build -t sunyoung1230/mf-model:0424-1 .
+  129  docker push sunyoung1230/mf-model:0424-1
+  130  kubectl apply -k "github.com/kubeflow/katib.git/manifests/v1beta1/installs/katib-standalone?ref=master"
+  131  export NAMESPACE=kubeflow
+  132  kubectl -n ${NAMESPACE} create rolebinding katib-editor --clusterrole=katib-controller --serviceaccount=${NAMESPACE}:default
+  133  kubectl apply -f rolebinding.yaml
+  134  cd ../
+  135  kubectl apply -f rolebinding.yaml
+  136  cd training
+  137  docker build -t sunyoung1230/mf-model:0424-1 .
+  138  docker push sunyoung1230/mf-model:0424-1
+  139  docker images
+  140  docker build -t sunyoung1230/mf-model:0424-2 .
+  141  docker push sunyoung1230/mf-model:0424-2
+  142  docker images
+  143  kubectl apply -f rolebinding.yaml
+  144  docker build -t sunyoung1230/mf-model:0424-3 .
+  145  docker push sunyoung1230/mf-model:0424-3
+  146  cd ../
+  147  docker system prune --all
+  148  sudo apt-get install update
+  149  sudo apt-get install upgrade
+  150  git clone https://github.com/google/sentencepiece.git
+  151  sudo apt-get install cmake
+  152  sudo apt-get install build-essential
+  153  sudo apt-get install pkg-config
+  154  sudo apt-get install libgoogle-perftools-dev
+  155  cd sentencepiece
+  156  ls
+  157  mkdir build
+  158  cd build
+  159  cmake ..
+  160  pwd
+  161  cd ..
+  162  cd ~
+  163  sudo apt-get install cmake
+  164  sudo apt-get update
+  165  sudo apt-get upgrade
+  166  sudo apt-get install cmake
+  167  sudo apt-get install build-essential
+  168  sudo apt-get install pkg-config
+  169  sudo apt-get install libgoogle-perftools-dev
+  170  cd sentencepiece
+  171  ls
+  172  cd /
+  173  cd ~
+  174  git clone https://github.com/google/sentencepiece.git
+  175  cd sentencepiece
+  176  mkdir build
+  177  cd build
+  178  cmake ..
+  179  grep -c processor /proc/cpuinfo
+  180  grep "안녕" text.txt
+  181  vi config.h
+  182  make -j 20
+  183  ls
+  184  cd src
+  185  ls
+  186  which spm_train
+  187  cd ~
+  188  cd sentencepiece
+  189  cd build
+  190  ls
+  191  cd src
+  192  ls
+  193  cd ..
+  194  cd data
+  195  wc -l CONV_KOREAN_DONE.txt
+  196  head -n 10000 CONV_KOREAN_DONE.txt text.txt
+  197  head -n 10000 CONV_KOREAN_DONE.txt >text.txt
+  198  head -n 10000 CONV_KOREAN_DONE.txt >test.txt
+  199  shuf -n 1000000 CONV_KOREAN_DONE.txt >train.txt
+  200  shuf -n 100 CONV_KOREAN_DONE.txt >test.txt
+  201  ls
+  202  shuf -n 1000000 CONV_KOREAN_DONE.txt >train.txt
+  203  cd ..
+  204  cd build/src
+  205  ls
+  206  spm_train --input=/home/sunyoung/sentencepiece/data/trainset.txt --model_prefix=BPE_KOR --vocab_size=5000 --character_coverage=1.0 --model_type=unigram
+  207  ./spm_train --input=/home/sunyoung/sentencepiece/data/trainset.txt --model_prefix=BPE_KOR --vocab_size=5000 --character_coverage=1.0 --model_type=unigram
+  208  ./spm_train --input=/home/sunyoung/sentencepiece/data/train.txt --model_prefix=BPE_KOR --vocab_size=5000 --character_coverage=1.0 --model_type=unigram
+  209  ls
+  210  vi BPE_KOR.vocab
+  211  ./spm_encode --model=test.model --output_format=piece < ../../data/test.txt > results.txt
+  212  ./spm_encode --model=BPE_KOR.model --output_format=piece < ../../data/test.txt > results.txt
+  213  head -n 10 results.txt
+  214  cd ..
+  215  sudo apt-get install git
+  216  sudo apt-get install g++
+  217  sudo apt-get install autoconf-archive
+  218  sudo apt-get install make
+  219  sudo apt-get install libtool
+  220  sudo apt-get install gfortran
+  221  ls
+  222  mkdir h2p
+  223  mkdir g2p
+  224  cd g2p/
+  225  wget http://www.openfst.org/twiki/pub/FST/FstDownload/openfst-1.7.2.tar.gz
+  226  tar -xvzf openfst-1.7.2.tar.gz
+  227  ls
+  228  cd openfst-1.7.2
+  229  ls
+  230  ./configure --enable-static --enable-shared --enable-far --enable-ngram-fsts
+  231  ls
+  232  make -j
+  233  ls
+  234  cd src
+  235  ls
+  236  cd bin
+  237  ls
+  238  cd ..
+  239  cd g2p/
+  240  git clone https://github.com/AdolfVonKleist/Phonetisaurus.git
+  241  ls
+  242  cd Phonetisaurus
+  243  cd ..
+  244  cd openfst-1.7.2/
+  245  ls
+  246  cd ..
+  247  cd Phonetisaurus/
+  248  ls
+  249  virtualenv ./venv --python=python3
+  250  sudo apt-get install virtualenv
+  251  virtualenv ./venv --python=python3
+  252  ls
+  253  ll /usr/bin/python*
+  254  which python
+  255  . venv/bin/activate
+  256  echo $PATH
+  257  deactivate
+  258  echo $PATH
+  259  . venv/bin/activate
+  260  pip install numpy
+  261  ls
+  262  ./configure --with-openfst-includes=/home/user/g2p/openfst-1.7.2/src/include --with-openfst-libs=home/user/g2p/openfst-1.7.2/src/lib
+  263  ./configure --with-openfst-includes=/home/users/g2p/openfst-1.7.2/src/include --with-openfst-libs=home/users/g2p/openfst-1.7.2/src/lib
+  264  du -sh /home/user/g2p/openfst-1.7.2/src/include
+  265  deactivate
+  266  ./configure --with-openfst-includes=/home/user/g2p/openfst-1.7.2/src/include --with-openfst-libs=home/user/g2p/openfst-1.7.2/src/lib
+  267  cd ..
+  268  cd openfst-1.7.2/
+  269  ./configure --with-openfst-includes=/home/user/g2p/openfst-1.7.2/src/include --with-openfst-libs=home/user/g2p/openfst-1.7.2/src/lib
+  270  which g2p
+  271  cd ..
+  272  which g2p
+  273  cd g2p/openfst-1.7.2/src
+  274  ls
+  275  cd include/
+  276  sudo make install
+  277  cd ..
+  278  sudo make install
+  279  echo 'export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib:/usr/local/lib/fst'      >> ~/.bashrc
+  280  cd ..
+  281  cd Phonetisaurus/
+  282  ./configure --with-openfst-includes=/home/user/g2p/openfst-1.7.2/src/include --with-openfst-libs=home/user/g2p/openfst-1.7.2/src/lib
+  283  ./configure --with-openfst-includes=/home/user/g2p/openfst-1.7.2/src/include --with-openfst-libs=/home/user/g2p/openfst-1.7.2/src/lib
+  284  LS
+  285  ls
+  286  cd ..
+  287  cd openfst-1.7.2/
+  288  pwd
+  289  cd ..
+  290  cd Phonetisaurus/
+  291  ./configure --with-openfst-includes=/home/sunyoung/g2p/openfst-1.7.2/src/include --with-openfst-libs=/home/sunyoung/g2p/openfst-1.7.2/src/lib
+  292  cd ..
+  293  cd openfst-1.7.2/
+  294  make clean
+  295  ls
+  296  ./configure --enable-static --enable-shared --enable-far --enable-ngram-fsts
+  297  make -j
+  298  cd ..
+  299  cd Phonetisaurus/
+  300  cd ..
+  301  cd openfst-1.7.2/
+  302  ls
+  303  cd src
+  304  ls
+  305  cd ..
+  306  cd Phonetisaurus/
+  307  ls
+  308  ./configure --with-openfst-includes=/home/sunyoung/g2p/openfst-1.7.2/src/include --with-openfst-libs=home/sunyoung/g2p/openfst-1.7.2/src/lib
+  309  du -sh home/sunyoung/g2p/openfst-1.7.2/src/lib
+  310  cd ..
+  311  ls
+  312  cd ..
+  313  ls
+  314  cd g2p
+  315  pwd
+  316  cd Phonetisaurus/
+  317  ./configure --with-openfst-includes=/home/sunyoung/g2p/openfst-1.7.2/src/include --with-openfst-libs=/home/sunyoung/g2p/openfst-1.7.2/src/lib
+  318  cd ..
+  319  ls
+  320  cd openfst-1.7.2/
+  321  ls
+  322  cd src
+  323  ls
+  324  ./configure --with-openfst-includes=/home/sunyoung/g2p/openfst-1.7.2/src/include --with-openfst-libs=/home/sunyoung/g2p/openfst-1.7.2/src/lib
+  325  cd ..
+  326  cd ../Phonetisaurus/
+  327  ./configure --with-openfst-includes=/home/sunyoung/g2p/openfst-1.7.2/src/include --with-openfst-libs=/home/sunyoung/g2p/openfst-1.7.2/src/lib
+  328  du -sh /home/sunyoung/g2p/openfst-1.7.2/src/lib
+  329  du -sh /home/sunyoung/g2p/openfst-1.7.2/src/include
+  330  cd ..
+  331  cd openfst-1.7.2/
+  332  ls
+  333  sudo make install
+  334  ls
+  335  echo 'export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib:/usr/local/lib/fst'      >> ~/.bashrc
+  336  cd ..
+  337  cd Phonetisaurus/
+  338  ./configure --with-openfst-includes=/home/sunyoung/g2p/openfst-1.7.2/src/include --with-openfst-libs=/home/sunyoung/g2p/openfst-1.7.2/src/lib
+  339  ls
+  340  make
+  341  sudo make install
+  342  cd ..
+  343  cd Phonetisaurus/
+  344  ls
+  345  cd ..
+  346  git clone https://github.com/mitlm/mitlm.git
+  347  ls
+  348  cd mitlm/
+  349  ls
+  350  ./autogen.sh 
+  351  make
+  352  export PATH=$/home/sunyoung/g2p/mitlm:$PATH
+  353  cd ..
+  354  cd Phonetisaurus/
+  355  export PATH=$/home/sunyoung/g2p/Phonetisaurus:$PATH
+  356  cd ..
+  357  cd openfst-1.7.2/
+  358  export PATH=$/home/sunyoung/g2p/openfst-1.7.2:$PATH
+  359  echo PATH
+  360  echo $PATH
+  361  cd ..
+  362  cd Phonetisaurus/
+  363  ls
+  364  cd src/scripts/
+  365  ls
+  366  echo $PATH
+  367  which estimate-ngram
+  368  ./phonetisaurus-train --lexicon KR.txt --seq2_del
+  369  phonetisaurus-train --lexicon KR.txt --seq2_del
+  370  which python
+  371  which python3
+  372  cd /usr/bin/
+  373  ll python*
+  374  sudo ln -s python3 python
+  375  ll python*
+  376  which python
+  377  cd ~
+  378  cd g2p/Phonetisaurus/src/scripts/
+  379  ./phonetisaurus-train --lexicon KR.txt --seq2_del
+  380  echo $PATH
+  381  export PATH=/home/sunyoung/g2p/openfst-1.7.2:/home/sunyoung/g2p/Phonetisaurus:/home/sunyoung/g2p/mitlm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/ProgramData/anaconda3:/mnt/c/ProgramData/anaconda3/Library/mingw-w64/bin:/mnt/c/ProgramData/anaconda3/Library/usr/bin:/mnt/c/ProgramData/anaconda3/Library/bin:/mnt/c/ProgramData/anaconda3/Scripts:/mnt/c/ProgramData/anaconda3/bin:/mnt/c/ProgramData/anaconda3/condabin:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0:/mnt/c/WINDOWS/System32/OpenSSH:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/BIG3-012/AppData/Roaming/Python/Python311/site-packages:/mnt/c/Program Files/MongoDB/Server/5.0/bin:/mnt/c/Program Files/PostgreSQL/13/bin:/mnt/c/Program Files/Redis:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Users/BIG3-012/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/BIG3-012/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/BIG3-012/AppData/Roaming/Python/Python311/site-packages:/snap/bin
+  382  ls
+  383  cd g2p/
+  384  ls
+  385  echo $PATH
+  386  export PATH=/home/sunyoung/g2p/openfst-1.7.2:/home/sunyoung/g2p/Phonetisaurus:/home/sunyoung/g2p/mitlm:$PATH
+  387  echo $PATH
+  388  cd Phonetisaurus/
+  389  ls
+  390  cd src/scripts/
+  391  ls
+  392  ./phonetisaurus-train --lexicon KR.txt --seq2_del
+  393  ls
+  394  vi test.txt
+  395  ls
+  396  ./phonetisaurus-apply --model train/model.fst --word_list test.txt
+  397  cd ~
+  398  ls
+  399  cd sentencepiece/
+  400  ls
+  401  cd build
+  402  cd src
+  403  top
+  404  cd ..
+  405  cd .,
+  406  cd ..
+  407  cd data
+  408  top
+  409  vi /proc/cpuinfo
+  410  cd ..
+  411  ls
+  412  cd build/src
+  413  top
+  414  cd ~
+  415  cd g2p/
+  416  top
+  417  docker ps
+  418  docker-compose up
+  419  docker
+  420  cd ..
+  421  cd bigdata7-final_project-/
+  422  ls
+  423  docker
+  424  docker pull elasticsearch:8.14.1
+  425  docker pull kibana:8.14.1
+  426  touch .env
+  427  ls -al
+  428  nano .env
+  429  docker-compose config
+  430  docker-compose up -d
+  431  nano -env
+  432  nano .env
+  433  docker-compose config
+  434  docker-compose up -d
+  435  docker images
+  436  docker pull docker.elastic.co/elasticsearch/elasticsearch:8.14.1
+  437  docker pull docker.elastic.co/kibana/kibana:8.14.1
+  438  nano .env
+  439  docker-compose config
+  440  docker-compose up -d
+  441  docker exec -it compose-es01-1 bash
+  442  wsl -d docker-desktop -u root
+  443  sudo apt install wsl
+  444  wsl -d docker-desktop -u root
+  445  sysctl -w vm.max_map_count=262144
+  446  vi /etc/sysctl.conf
+  447  docker ps
+  448  docker images
+  449  ls -al
+  450  nano .env
+  451  docker-compose config
+  452  cd ~
+  453  pwd
+  454  cd /
+  455  cd mnt/c
+  456  cd Users
+  457  cd BIG3-012/bigdata7-final_project-/
+  458  docker-compose config
+  459  docker-compose up -d
+  460  docker logs es01
+  461  docker networks ls
+  462  docker create network elastic
+  463  docker network create elastic
+  464  docker network ls
+  465  docker-compose up -d
+  466  docker exec -it es01 /bin/bash
+  467  docker-compose down
+  468  docker-compose up -d
+  469  docker exec -it es01 /bin/bash
+  470  bin/elasticsearch-create-enrollment-token -s kibana
+  471  docker exec -it es01 /bin/bash
+  472  docker-compose down
+  473  docker-compose config
+  474  docker-compose up -d
+  475  docker ps -aexit
+  476  docker ps -a
+  477  docker-compose down
+  478  docker-compose up -d
+  479  docker exec -it es01 /bin/bash
+  480  docker start es01
+  481  docker exec -it es01 /bin/bash
+  482  docker ps
+  483  docker start es01
+  484  docker exec -it es01 /bin/bash
+  485  cd /usr/share/elasticsearch
+  486  docker start es01
+  487  docker exec -it es01 /bin/bash
+  488  docker start es01
+  489  docker exec -it es01 /bin/bash
+  490  docker start es01
+  491  docker exec -it es01 /bin/bash
+  492  docker start es01
+  493  docker exec -it es01 /bin/bash
+  494  docker restart es01
+  495  docker exec -it es01 /bin/bash
+  496  docker logs es01
+  497  docker-compose down
+  498  docker-compose up -d
+  499  curl -X GET "http://localhost:9200/_cluster/health?pretty"
+  500  docker network inspect myproject_default
+  501  docker logs es01
+  502  docker-compose down
+  503  docker-compose up -d
+  504  curl -X GET "http://localhost:9200/_cluster/health?pretty"
+  505  docker network inspect myproject_default
+  506  docker-compose down
+  507  docker-compose up -d
+  508  docker logs es01
+  509  docker-compose up -d
+  510  docker logs es01
+  511  docker-compose down
+  512  docker-compose up -d
+  513  docker logs es01
+  514  docker-compose down
+  515  docker-compose up -d
+  516  history
+  517  history > history.text
