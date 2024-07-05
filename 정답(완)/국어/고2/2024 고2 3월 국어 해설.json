@@ -1,0 +1,274 @@
+{
+    "answers": [
+        {
+            "question_num": 1,
+            "multiple_answer": 2,
+            "count": 1,
+            "subject": "국어"
+        },
+        {
+            "question_num": 2,
+            "multiple_answer": 4,
+            "count": 2,
+            "subject": "국어"
+        },
+        {
+            "question_num": 3,
+            "multiple_answer": 4,
+            "count": 3,
+            "subject": "국어"
+        },
+        {
+            "question_num": 4,
+            "multiple_answer": 1,
+            "count": 4,
+            "subject": "국어"
+        },
+        {
+            "question_num": 5,
+            "multiple_answer": 4,
+            "count": 5,
+            "subject": "국어"
+        },
+        {
+            "question_num": 6,
+            "multiple_answer": 3,
+            "count": 6,
+            "subject": "국어"
+        },
+        {
+            "question_num": 7,
+            "multiple_answer": 3,
+            "count": 7,
+            "subject": "국어"
+        },
+        {
+            "question_num": 8,
+            "multiple_answer": 2,
+            "count": 8,
+            "subject": "국어"
+        },
+        {
+            "question_num": 9,
+            "multiple_answer": 1,
+            "count": 9,
+            "subject": "국어"
+        },
+        {
+            "question_num": 10,
+            "multiple_answer": 2,
+            "count": 10,
+            "subject": "국어"
+        },
+        {
+            "question_num": 11,
+            "multiple_answer": 4,
+            "count": 11,
+            "subject": "국어"
+        },
+        {
+            "question_num": 12,
+            "multiple_answer": 4,
+            "count": 12,
+            "subject": "국어"
+        },
+        {
+            "question_num": 13,
+            "multiple_answer": 1,
+            "count": 13,
+            "subject": "국어"
+        },
+        {
+            "question_num": 14,
+            "multiple_answer": 4,
+            "count": 14,
+            "subject": "국어"
+        },
+        {
+            "question_num": 15,
+            "multiple_answer": 3,
+            "count": 15,
+            "subject": "국어"
+        },
+        {
+            "question_num": 16,
+            "multiple_answer": 5,
+            "count": 16,
+            "subject": "국어"
+        },
+        {
+            "question_num": 17,
+            "multiple_answer": 4,
+            "count": 17,
+            "subject": "국어"
+        },
+        {
+            "question_num": 18,
+            "multiple_answer": 1,
+            "count": 18,
+            "subject": "국어"
+        },
+        {
+            "question_num": 19,
+            "multiple_answer": 1,
+            "count": 19,
+            "subject": "국어"
+        },
+        {
+            "question_num": 20,
+            "multiple_answer": 5,
+            "count": 20,
+            "subject": "국어"
+        },
+        {
+            "question_num": 21,
+            "multiple_answer": 4,
+            "count": 21,
+            "subject": "국어"
+        },
+        {
+            "question_num": 22,
+            "multiple_answer": 3,
+            "count": 22,
+            "subject": "국어"
+        },
+        {
+            "question_num": 23,
+            "multiple_answer": 1,
+            "count": 23,
+            "subject": "국어"
+        },
+        {
+            "question_num": 24,
+            "multiple_answer": 5,
+            "count": 24,
+            "subject": "국어"
+        },
+        {
+            "question_num": 25,
+            "multiple_answer": 5,
+            "count": 25,
+            "subject": "국어"
+        },
+        {
+            "question_num": 26,
+            "multiple_answer": 1,
+            "count": 26,
+            "subject": "국어"
+        },
+        {
+            "question_num": 27,
+            "multiple_answer": 5,
+            "count": 27,
+            "subject": "국어"
+        },
+        {
+            "question_num": 28,
+            "multiple_answer": 1,
+            "count": 28,
+            "subject": "국어"
+        },
+        {
+            "question_num": 29,
+            "multiple_answer": 5,
+            "count": 29,
+            "subject": "국어"
+        },
+        {
+            "question_num": 30,
+            "multiple_answer": 4,
+            "count": 30,
+            "subject": "국어"
+        },
+        {
+            "question_num": 31,
+            "multiple_answer": 5,
+            "count": 31,
+            "subject": "국어"
+        },
+        {
+            "question_num": 32,
+            "multiple_answer": 3,
+            "count": 32,
+            "subject": "국어"
+        },
+        {
+            "question_num": 33,
+            "multiple_answer": 3,
+            "count": 33,
+            "subject": "국어"
+        },
+        {
+            "question_num": 34,
+            "multiple_answer": 2,
+            "count": 34,
+            "subject": "국어"
+        },
+        {
+            "question_num": 35,
+            "multiple_answer": 2,
+            "count": 35,
+            "subject": "국어"
+        },
+        {
+            "question_num": 36,
+            "multiple_answer": 1,
+            "count": 36,
+            "subject": "국어"
+        },
+        {
+            "question_num": 37,
+            "multiple_answer": 5,
+            "count": 37,
+            "subject": "국어"
+        },
+        {
+            "question_num": 38,
+            "multiple_answer": 2,
+            "count": 38,
+            "subject": "국어"
+        },
+        {
+            "question_num": 39,
+            "multiple_answer": 2,
+            "count": 39,
+            "subject": "국어"
+        },
+        {
+            "question_num": 40,
+            "multiple_answer": 5,
+            "count": 40,
+            "subject": "국어"
+        },
+        {
+            "question_num": 41,
+            "multiple_answer": 5,
+            "count": 41,
+            "subject": "국어"
+        },
+        {
+            "question_num": 42,
+            "multiple_answer": 3,
+            "count": 42,
+            "subject": "국어"
+        },
+        {
+            "question_num": 43,
+            "multiple_answer": 2,
+            "count": 43,
+            "subject": "국어"
+        },
+        {
+            "question_num": 44,
+            "multiple_answer": 3,
+            "count": 44,
+            "subject": "국어"
+        },
+        {
+            "question_num": 45,
+            "multiple_answer": 4,
+            "count": 45,
+            "subject": "국어"
+        }
+    ]
+}
