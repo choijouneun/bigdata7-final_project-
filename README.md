@@ -1,32 +1,25 @@
-# 빅데이터 7기 최종프로젝트 Question-Geuie 👋
-- - -
-## **❤️‍🔥 천재교육 빅데이터 7기 i-SON(아이손) 팀입니다! ❤️‍🔥** 
+# 빅데이터 7기 최종프로젝트 Quest-Genie 🧞
+**❤️‍🔥 천재교육 빅데이터 7기 Quest-Genie🧞(퀘스트 지니) 팀입니다! ❤️‍🔥** 
 
-요즘 시대에 태어난 유아들은 태어날 때부터 디지털 환경에 익숙한 이른바 '디지털 원주민'입니다. 이들은 오프라인뿐만 아니라 온라인 환경에서도 자연스럽게 노출되어 활동을 합니다. 이러한 변화를 인식하여 에듀테크 시장은 유아들의 능동적인 학습 참여를 촉진하기 위해 게이미피케이션에 많은 투자를 하고 있습니다.
-
-i-son은 5-6세 유아들의 학습 경험을 향상시키기 위해 설계된 혁신적인 교육 프로그램입니다. 기존의 천재교육 '밀크 T'와 같은 플랫폼은 이 연령대를 위한 다양한 게이미피케이션 교육 콘텐츠를 제공하지만, 카메라를 활용한 콘텐츠는 거의 없습니다. i-son은 이러한 격차를 해소하기 위해 몰입감 있는 카메라 기반 교육 콘텐츠를 개발하는 것을 목표로 합니다.
+현재 공교육에서 AI 디지털 교과서 도입이 큰 이슈로 떠오르고 있으며, 교육부는 2024년 관련 예산을 5333억 원 편성했다. AI 교과서는 연 구독료 6만~10만 원으로 예상되며, 조 단위 교과서 시장이 창출될 전망이다. 개별화 및 맞춤형 교육에 대한 기대가 커지고 있으며, 특히 고등학교에서는 킬러 문항 제거로 인해 다양한 문항 풀이가 중요해졌다. 그러나 교사들이 수작업으로 교육 콘텐츠를 제작해야 하는 한계가 있다. 경쟁사 분석 결과, 비상교육의 기출탭탭은 태블릿PC 기반의 수능 기출 학습 앱으로 유사 문항 제공 기능을 갖추고 있으며, 프리윌린의 매쓰플랫은 70만 개의 수학 문제를 제공해 교사 주도의 교육을 지원한다. 자사 분석 결과, 천재교과서의 지니아튜터는 자동채점과 AI유사학습 서비스를 제공하며, 닥터매쓰의 통합문항플랫폼은 맞춤 문항과 유사 문제를 제공한다. 이를 바탕으로 국어, 영어, 수학 교과를 중심으로 유사 문항 추천 서비스를 제공해 고등학생의 개별화 및 맞춤형 교육을 지원하는 것이 필요하다.
 
 ## 주요 기능
 
-- **카메라 기반 상호작용**: 카메라 기술을 활용하여 몰입감 있는 학습 경험을 제공합니다.
-- **게이미피케이션**: 게임 요소를 활용하여 학습을 재미있고 흥미롭게 만듭니다.
-- **연령 적합 콘텐츠**: 5-6세 유아들을 위해 특별히 설계된 교육 자료를 제공합니다.
-- **향상된 학습**: 혁신적인 교육 도구를 통해 능동적인 참여를 유도하고 학습 성과를 향상시킵니다.
+- **유사문항 추천**: 프롬프트 엔지니어링을 활용하여 외부문제의 텍스트와 이미지를 활용하여 수능 기출문제와의 유사도를 측정해 유사도가 높은 5개의 문항을 추천해줌.
+- **버전관리**: 매 분기별 새로운 수능, 모평 기출이 새로 출제됨과 동시에 웹사이트 내에서 기출문제의 pdf와 정답지를 업로드 하면 그것을 기반으로 DB에 적재하여 유사문항 추천에 추가됨.
 
-## i-son의 필요성
-
-- **디지털 원주민**: 현대 유아들은 디지털 환경에 익숙하여 전통적인 학습 방법이 효과적이지 않을 수 있습니다.
-- **참여도 향상**: 상호작용적이고 게이미피케이션된 콘텐츠는 학습 활동에 대한 참여도를 크게 높일 수 있습니다.
-- **혁신적 접근**: 카메라 기술을 도입함으로써 전통적인 방법으로는 제공할 수 없는 독특하고 매력적인 교육 경험을 창출할 수 있습니다.
 
 <br>
 
 <br>
 <p align="left">
-  <img src=https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/27609c4e-7ec6-4556-9169-3ddb4962aa9d width = "630px">
+  <img src=https://github.com/user-attachments/assets/4d180855-24b9-4029-9fd6-bb9519d56d9f width = "630px">
+  
+<p align="left">
+  <img src=https://github.com/user-attachments/assets/a7b86868-b76d-4b4e-a3de-0ca915ca21e2 width = "630px">
 
 
-- - -
+
 
 ## **🤍 소개**
 
@@ -39,47 +32,32 @@ i-son은 5-6세 유아들의 학습 경험을 향상시키기 위해 설계된 �
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/bgmbgm94">
-        <img src="https://github.com/bgmbgm94.png" width="150px;" alt="경만"/>
+      <a href="https://github.com/hanaSummer0701">
+        <img src="https://github.com/hanaSummer0701.png" width="150px;" alt="하나"/>
         <br />
-        <sub><b>👑 백경만</b><br>🙋‍♂️ 교육 컨텐츠 개발 및 발표</sub>
+        <sub><b>🙋‍♀️장하나</b><br> - 데이터 정량화 및 전처리<br> - 문항시스템 개발 및 테스트<br> - 자동 태깅 모델 개발 및 테스트<br> - AWS S3 생성 및 설정, 관리<br> - 기획서 및 최종 보고서 작성</sub>
+</sub>
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/pch229">
-        <img src="https://github.com/pch229.png" width="150px;" alt="찬혁"/>
+      <a href="https://github.com/choijouneun">
+        <img src="https://github.com/choijouneun.png" width="150px;" alt="종은"/>
         <br />
-        <sub><b>박찬혁</b><br>🙋‍♂️ DB 구축 및 문서 작업</sub>
+        <sub><b>🙋‍♂️최종은</b><br>- 데이터 수집<br> - 데이터 정량화 및 전처리<br> - 문항시스템 개발 및 테스트<br> - 자동 태깅 모델 개발 및 테스트<br> - 멘토링 활동 보고서 작성<br> - Git 커밋 컨벤션/브렌치 전략<br> - 코드 컨벤션 정의</sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/LeeMin-a">
         <img src="https://github.com/LeeMin-a.png" width="150px;" alt="민아"/>
         <br />
-        <sub><b>이민아</b><br>🙋‍♀️ 웹 개발 및 Notion 담당</sub>
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/choijouneun">
-        <img src="https://github.com/choijouneun.png" width="150px;" alt="종은"/>
-        <br />
-        <sub><b>최종은</b><br>🙋‍♂️ 교육 컨텐츠 개발 및 인식모델 파인튜닝</sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/hanaSummer0701">
-        <img src="https://github.com/hanaSummer0701.png" width="150px;" alt="하나"/>
-        <br />
-        <sub><b>장하나</b><br>🙋‍♀️ DB 구축 및 ppt 제작</sub>
+        <sub><b>🙋‍♀️이민아</b><br> - 데이터 수집<br> - AWS 서버 생성 및 환경 구축<br> - FastAPI 기본 서버 환경 구축<br> - 도커 웹 서버 빌드<br> - DB와 웹 서버 연결 및 관리<br> - Wire Frame 작성<br> - 노션 관리</sub>
       </a>
     </td>
     <td align="center">
       <a href="https://github.com/sunny7319">
         <img src="https://github.com/sunny7319.png" width="150px;" alt="선영"/>
         <br />
-        <sub><b>민선영</b><br>🙋‍♀️ 웹개발 및 Github 담당</sub>
+        <sub><b>🙋‍♀️민선영</b><br> -데이터 수집<br> - DB 구축 및 관리<br> - 도커컴포즈 작성 및 서버 연결<br> - 파이프라인 설계<br> - ppt 제작<br> - 테이블 정의서 작성</sub>
       </a>
     </td>
   </tr>
@@ -91,11 +69,11 @@ i-son은 5-6세 유아들의 학습 경험을 향상시키기 위해 설계된 �
 
 </br>
 
--  **🎭 따라해! 놀이터** : 웹캠을 활용하여 유아들이 손을 통해 미리 학습된 그림자(개,고양이,나무,해...) 모양을 인식하면 해당 그림자에 맞는 이미지가 생성되는 게임으로, 5-7세 아이들의 소근육 발달에 도움을 줌. 
+-  **📖 Korean** : 웹사이트에 접속하여 국어를 선택 한 후 사용자가 궁금한 외부문제를 첨부해 시작 버튼을 누르면 해당 문제와 유사한 문항 5개를 선별하여 보여줌. 
 
-- **🐭 잡아라! 두더지** : 게임 내에서 요구하는 조건에 맞춰서 나타난 두더지 이미지를 잡아 없애는 게임으로. 5-7세 아이들의 언어발달과 더불어 소근육 발달에 도움을 줌.
+- **🔢 Math** : 웹사이트에 접속하여 수학를 선택 한 후 사용자가 궁금한 외부문제를 첨부해 시작 버튼을 누르면 해당 문제와 유사한 문항 5개를 선별하여 보여줌. 
   
-- **📝 맞춰라! 색종이** : 게임내에 나타난 이미지를 보고 한글 교구를 이용하여 단어를 조합하는 게임으로, 5-7세 아이들의 언어발달과 더불어 한글 교구를 통한 소근육 발달에 도움을 줌.
+- **🔠 English** : 웹사이트에 접속하여 영를 선택 한 후 사용자가 궁금한 외부문제를 첨부해 시작 버튼을 누르면 해당 문제와 유사한 문항 5개를 선별하여 보여줌. 
 </details>
 
 
@@ -112,9 +90,9 @@ i-son은 5-6세 유아들의 학습 경험을 향상시키기 위해 설계된 �
 <img alt="numpy" src ="https://img.shields.io/badge/numpy-013243.svg?&style=for-the-badge&logo=numpy&logoColor=white"/>
 <img alt="OpenAI" src ="https://img.shields.io/badge/OpenAI-412991.svg?&style=for-the-badge&logo=OpenAI&logoColor=white"/>
 <img alt="Anaconda" src ="https://img.shields.io/badge/Anaconda-44A833.svg?&style=for-the-badge&logo=Anaconda&logoColor=black"/>
-<img alt="Flask" src ="https://img.shields.io/badge/Flask-000000.svg?&style=for-the-badge&logo=Flask&logoColor=white"/>
 <img alt="postgresql" src ="https://img.shields.io/badge/postgresql-4169E1.svg?&style=for-the-badge&logo=postgresql&logoColor=white"/>
-<img alt="SQLAlchemy" src ="https://img.shields.io/badge/SQLAlchemy-D71F00.svg?&style=for-the-badge&logo=SQLAlchemy&logoColor=white"/>
+<img alt="Keras" src ="https://img.shields.io/badge/Keras-D00000.svg?&style=for-the-badge&logo=Keras&logoColor=white"/>
+<img alt="FastAPI" src ="https://img.shields.io/badge/FastAPI-009688.svg?&style=for-the-badge&logo=FastAPI&logoColor=white"/>
 <img src = "https://img.shields.io/badge/visualstudiocode-007ACC.svg?&style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
 <img alt="Github" src = "https://img.shields.io/badge/github-181717.svg?&style=for-the-badge&logo=Github&logoColor=white"/>
 <img alt="git" src = "https://img.shields.io/badge/git-F05032.svg?&style=for-the-badge&logo=Git&logoColor=white"/>
@@ -126,27 +104,10 @@ i-son은 5-6세 유아들의 학습 경험을 향상시키기 위해 설계된 �
 
 
 ## **🩶 개발환경 및 실행 방법**
+
 <details>
 <summary><b>📄Requirements</b></summary>
-pdf2image==1.17.0
-opencv-python==4.9.0.80
-pandas==2.2.2
-numpy==1.26.4 
-pillow==10.3.0 
-fastapi==0.111.0 
-easyocr==1.7.1 
-pytesseract==0.3.10 
-pymupdf 
-glob2==0.7 
-pymysql==1.1.1
-uvicorn==0.30.1
-boto3==1.34.142
-elasticsearch==8.14.0
-keras==3.4.1
-tensorflow==2.17.0
-torch==2.3.1
-torchvision==0.18.1
-git+https://github.com/openai/CLIP.git
+  
   <br>
     - pdf2image==1.17.0
   <br>
@@ -198,33 +159,34 @@ git+https://github.com/openai/CLIP.git
   > -> "C:\Users\USER\miniconda3\Scripts" & "C:\Users\USER\miniconda3\Library\bin"
   > 입력 후 모든 창 "확인" 눌러 닫기
   
-  ### 콘다 가상환경 만들기1 (가상환경 이름: question_genine)
+  ### 콘다 가상환경 만들기1 (가상환경 이름: Quest-Genie)
   CMD 창 열고 아래와 같이 입력, 설치 중간에 "y" 입력(엔터), 설치 완료 후 CMD 닫기
   ```cmd
-  conda create -n venv_ai python==3.12.3 numpy==1.26.4 flask==3.0.3 flask-sqlalchemy==3.1.1 psycopg2==2.9.9 watchdog==4.0.1 pip
+  conda create -n Quest_Genie 
   ```
   다시 CMD 창 열고 아래와 같이 입력 후 완료 시 닫기
   ```cmd
   conda init
   ```
 
-  ### 콘다 가상환경 만들기2 (나머지 패키지 설치)
+  ### 콘다 가상환경 만들기2 (패키지 설치)
   CMD 창 열고 아래와 같이 입력
   ```cmd
-  conda activate venv_ai 
+  conda activate Quest_Genie 
   ```
   ```cmd
-  pip install opencv-python==4.9.0.80 mediapipe==0.10.14 cvzone==1.6.1 tensorflow==2.16.1 apscheduler==3.10.4 torch==2.3.0 torchvision==0.18.0
+  pip install -r requirements.txt
+
   ```
 
   ### 가상 환경에서 실행 시키기
   git pull, clone 등의 방법으로 main 브랜치 로컬에 저장 후  
   Hands_MediaPipe_project 폴더 들어가서 폴더 상단 주소창에 CMD 입력, CMD 창 띄운 후
   ```cmd
-  conda activate venv_ai
+  conda activate Quest_Genie
   ```
   ```cmd
-  python server.py
+  python main.py
   ```
 
   #### !!주의 사항!!
@@ -236,7 +198,7 @@ git+https://github.com/openai/CLIP.git
 
 ## **🖤 콘텐츠 미리보기**
 <details>
-  <summary><b>🎭 따라해! 놀이터</b></summary>
+  <summary><b>📖 Korean</b></summary>
   <p align='left'>
     <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/a8ad6457-9605-4ddf-a8e5-1b1c01593b7f" width="400px"><br>
     <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/0c52f251-2884-41e4-b65d-612cac8bb7cc" width="400px"><br>
@@ -249,7 +211,7 @@ git+https://github.com/openai/CLIP.git
 </details>
 <br>
 <details>
-  <summary><b>🐭 잡아라! 두더지</b></summary>
+  <summary><b>🔢 Math</b></summary>
   <p align='left'>
     <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/cf6910e7-5bfe-41af-a76e-075f9cf3754d" width="400px"><br>
     <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/5b324c45-f454-4d85-9631-96ce2656a11d" width="400px"><br>
@@ -259,7 +221,7 @@ git+https://github.com/openai/CLIP.git
 </details>
 <br>
 <details>
-  <summary><b>📝 맞춰라! 색종이</b></summary>
+  <summary><b>🔠 English</b></summary>
   <p align='left'>
     <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/fbc1e108-b396-4f23-8e6b-98803fb69e9a" width="400px"><br>
     <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/f76a291c-afb6-4cfe-b045-f42110b76b00" width="400px"><br>
@@ -276,19 +238,28 @@ git+https://github.com/openai/CLIP.git
 <summary><b>💡Reference </b></summary>
 <br>
 
-- Prensky, M. (2001a). Digital natives, digital immigrants part 1. On the horizon, 9(5), 1-6.
-- 이지우, 박유정. (2022). 게이미피케이션 기반 국내 유아교육 앱(app) 분석. 열린유아교육연구, 27(6), 29-52, 
-10.20437/KOAECE27-6-02
-- 백정열 (2018). 에듀테크의 기술 및 콘텐츠 동향. 정보통신기술진흥센터(1855), 14-28. 
-- 김진수, 박남제 (2019). 게이미피케이션을 활용한 초등학생 블록체인기술 핵심원리 교육 탐구. 정보교육학회논문지, 23(2), 
-141-148. 
-- Kim, Kyung-chul, Oh, Ah-reum, “A Study on the imaginative narratives of children using Augmented Reality (AR)-based 
-educational play content”, Journal of Children's Media & Education , Vol. 20, No. 1, 169-195, Mar 2021.  이하 Kim, Oh. 
-- 아시아경제) 투자 혹한기에도 에듀테크 기업엔 수백억대 뭉칫돈 몰린다   https://cm.asiae.co.kr/article/2022112508303826390 
-- 이투데이) 국내 에듀테크 시장 2026년 11조원 전망…"공교육과 결합 추진"  https://www.etoday.co.kr/news/view/2285141 
-- https://www.flaticon.com/kr/free-icons/
-- https://www.home-learn.co.kr/homelearn/cust1/learning-machine.htm
-- https://m.wjthinkbig.com/brand/brand_09.do
-- https://www.segye.com/newsView/20230801511739
-- https://i.milkt.co.kr/Main/frm_Main.aspx?partnercoopid=ISPGO210624N&linkseq=7&utm_source=google&utm_medium=cpc&utm_campaign=%23%EB%B0%80%ED%81%ACT%EC%95%84%EC%9D%B4_%23%EA%B2%80%EC%83%89%EA%B4%91%EA%B3%A0_4)%20%EC%9D%BC%EB%B0%98&utm_adgroup=%EC%9D%BC%EB%B0%98_%ED%95%99%EC%8A%B5%EC%A7%80&utm_term=%EC%96%B4%EB%A6%B0%EC%9D%B4%ED%95%99%EC%8A%B5%EC%A7%80&gad_source=1&gclid=CjwKCAjwjqWzBhAqEiwAQmtgT-8JQ62gKqpq5X4CSS4yrWlP22N8fobAUNsRamCmsaBt47Nflnw34xoCLJEQAvD_BwE
+- 한국경제) "내년 도입될 AI 디지털 교과서 선점하라"
+https://n.news.naver.com/article/015/0004992468?sid=103
+- 피앤피뉴스) 킬러문항 없앤 첫 수능...적정 난이도로 변별력 갖췄다
+https://www.gosiweek.com/article/1065582631806593
+- 내일신문) 비상교육 태블릿PC 전용 수능 학습 앱 ‘기출탭탭’ 활용법
+https://www.naeil.com/news/read/455315
+- 에듀동아) 프리윌린, ‘2024 인공지능 학습 플랫폼 매칭데이’에서 매쓰플랫과 풀리수학 선보여
+http://m.edu.donga.com/news/view.php?at_no=20240223113015145830
+- 에듀동아) 프리윌린, 학교 맞춤형 에듀테크 서비스 ‘스쿨플랫’ 오픈…AI 기술로 교실에 ‘초개인화
+교육’ ‘학 습 격차 해소’ 지원
+http://m.edu.donga.com/news/view.php?at_no=20240516151302535017
+- 뉴스핌) 아티피셜소사이어티, 서울특별시교육청에 교육 콘텐츠 AI 솔루션 '젠큐' 공급
+https://www.newspim.com/news/view/20240118000068
+- 전자신문) 비상교육 '비바샘', AI 기반 수학 문항 자동 생성 서비스
+https://n.news.naver.com/article/030/0003078902?sid=102
+- QuestionWell 홈페이지 https://www.questionwell.org/
+- 천재교과서 지니아튜터, 서울시교육청 주최 에듀테크 교원연수 참가
+https://www.it-b.co.kr/news/articleView.html?idxno=76613
+- 천재교과서, 최신형 AI 엔진 탑재 수학문제은행 ‘닥터매쓰2.0’ 그랜드 오픈
+https://www.it-b.co.kr/news/articleView.html?idxno=69518
+- 문제지 header, body영역 분리 참고 블로그 https://kagus2.tistory.com/50 
+- 각 문항 컨투어영역 참고 블로그 https://iagreebut.tistory.com/74 
+- ssh 연결 오류 해결 참고 블로그 https://lovflag.tistory.com/17 ssh 
+- ElasticSearch-FastAPI 연결 참고 자료 https://medium.com/@pritam7798sonawane/building-a-text-search-application-with-elasticsearchand-fastapi-14ea78cf1890
 </details>
