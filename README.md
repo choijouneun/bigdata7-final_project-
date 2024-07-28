@@ -1,4 +1,4 @@
-# 빅데이터 7기 중간프로젝트 i-SON 👋
+# 빅데이터 7기 최종프로젝트 Question-Geuie 👋
 - - -
 ## **❤️‍🔥 천재교육 빅데이터 7기 i-SON(아이손) 팀입니다! ❤️‍🔥** 
 
@@ -128,33 +128,59 @@ i-son은 5-6세 유아들의 학습 경험을 향상시키기 위해 설계된 �
 ## **🩶 개발환경 및 실행 방법**
 <details>
 <summary><b>📄Requirements</b></summary>
-
+pdf2image==1.17.0
+opencv-python==4.9.0.80
+pandas==2.2.2
+numpy==1.26.4 
+pillow==10.3.0 
+fastapi==0.111.0 
+easyocr==1.7.1 
+pytesseract==0.3.10 
+pymupdf 
+glob2==0.7 
+pymysql==1.1.1
+uvicorn==0.30.1
+boto3==1.34.142
+elasticsearch==8.14.0
+keras==3.4.1
+tensorflow==2.17.0
+torch==2.3.1
+torchvision==0.18.1
+git+https://github.com/openai/CLIP.git
   <br>
-    - python==3.12.3
-  <br>
-    - numpy==1.26.4
-  <br>
-    - flask==3.0.3
-  <br>
-    - flask-sqlalchemy==3.1.1
-  <br>
-    - psycopg2==2.9.9
+    - pdf2image==1.17.0
   <br>
     - opencv-python==4.9.0.80
   <br>
-    - mediapipe==0.10.14
+    - pandas==2.2.2
   <br>
-    - cvzone==1.6.1
+    - numpy==1.26.4
   <br>
-    - tensorflow==2.16.1
+    - pillow==10.3.0 
   <br>
-    - apscheduler==3.10.4
+    - fastapi==0.111.0 
   <br>
-    - torch==2.3.0
+    - easyocr==1.7.1
   <br>
-    - torchvision==0.18.0
+    - pytesseract==0.3.10
   <br>
-    - watchdog==4.0.1
+    - pymupdf 
+  <br>
+    - glob2==0.7
+  <br>
+    - pymysql==1.1.1
+  <br>
+    - uvicorn==0.30.1
+  <br>
+    - elasticsearch==8.14.0
+  <br>
+    - keras==3.4.1
+  <br>
+    - tensorflow==2.17.0
+  <br>
+    - torch==2.3.1
+  <br>
+    - torchvision==0.18.1
   <br>
   </details>
 
@@ -172,7 +198,7 @@ i-son은 5-6세 유아들의 학습 경험을 향상시키기 위해 설계된 �
   > -> "C:\Users\USER\miniconda3\Scripts" & "C:\Users\USER\miniconda3\Library\bin"
   > 입력 후 모든 창 "확인" 눌러 닫기
   
-  ### 콘다 가상환경 만들기1 (가상환경 이름: venv_ai)
+  ### 콘다 가상환경 만들기1 (가상환경 이름: question_genine)
   CMD 창 열고 아래와 같이 입력, 설치 중간에 "y" 입력(엔터), 설치 완료 후 CMD 닫기
   ```cmd
   conda create -n venv_ai python==3.12.3 numpy==1.26.4 flask==3.0.3 flask-sqlalchemy==3.1.1 psycopg2==2.9.9 watchdog==4.0.1 pip
