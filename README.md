@@ -225,12 +225,12 @@
 <details>
   <summary><b>🔠 English</b></summary>
   <p align='left'>
-    <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/fbc1e108-b396-4f23-8e6b-98803fb69e9a" width="400px"><br>
-    <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/f76a291c-afb6-4cfe-b045-f42110b76b00" width="400px"><br>
-    <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/ca670d66-408d-44d2-9453-17bcd6fe1d7a" width="400px"><br>
-    <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/b682b102-841d-4838-9776-4703eaeab31d" width="400px"><br>
-    <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/cd9c11f6-2bb0-4c86-bbad-ac385427f011" width="400px"><br>
-    <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/f34e8113-cc0b-419d-92f0-31c248654007" width="400px"><br>
+    <img src = "https://github.com/user-attachments/assets/435dc7b3-1161-4dc1-b3f2-ee491ca75b9c" width="400px"><br>
+    <img src = "https://github.com/user-attachments/assets/06950dd2-5f4a-4739-9590-2d299fd9e058" width="400px"><br>
+    <img src = "https://github.com/user-attachments/assets/69d76b2a-ee8f-45f5-bbc0-12b5748da798" width="400px"><br>
+    <img src = "https://github.com/user-attachments/assets/5703465d-9699-437b-96d0-68a6789684c2" width="400px"><br>
+    <img src = "https://github.com/user-attachments/assets/0848ca3c-c32c-4a8c-93a7-1cf561a4e31b" width="400px"><br>
+    <img src = "https://github.com/user-attachments/assets/0ad5a6dc-8346-4a5b-8a64-d4bf68f8059f" width="400px"><br>
   </p>
 </details>
 
