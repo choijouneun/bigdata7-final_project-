@@ -200,23 +200,25 @@
 <details>
   <summary><b>📖 Korean</b></summary>
   <p align='left'>
-    <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/a8ad6457-9605-4ddf-a8e5-1b1c01593b7f" width="400px"><br>
-    <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/0c52f251-2884-41e4-b65d-612cac8bb7cc" width="400px"><br>
-    <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/6693f6f8-14df-481e-8b68-d02a9a179f8e" width="400px"><br>
-    <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/29450373-63f5-47e3-b071-d1ac2fc127ac" width="400px"><br>
-    <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/438ed6fa-52c4-4393-855c-591090ba2c85" width="400px"><br>
-    <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/cac8e55d-a747-40be-bcd0-f911e4f80b8f" width="400px"><br>
-    <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/68a240de-2c35-48af-8f7a-8c6015a72bd8" width="400px"><br>
+    <img src = "https://github.com/user-attachments/assets/97f2b281-993b-4053-b4f8-0a3ec5d56255" width="400px"><br>
+    <img src = "https://github.com/user-attachments/assets/21c51771-70d5-465e-9b7e-dcb0a4692fee" width="400px"><br>
+    <img src = "https://github.com/user-attachments/assets/b474b38a-f51b-41c2-90cd-80c731667e1b" width="400px"><br>
+    <img src = "https://github.com/user-attachments/assets/ff65e4a5-0173-4a03-8bdb-fe7bf9191973" width="400px"><br>
+    <img src = "https://github.com/user-attachments/assets/27fb5bd7-175e-4086-a74f-6dd0df34ca6c" width="400px"><br>
+    <img src = "https://github.com/user-attachments/assets/03cc90fa-6158-4303-bbaa-c4ddb4f12284" width="400px"><br>
+    <img src = "https://github.com/user-attachments/assets/3f0887de-fd3f-4084-a1be-b85d4260b16b" width="400px"><br>
   </p>
 </details>
 <br>
 <details>
   <summary><b>🔢 Math</b></summary>
   <p align='left'>
-    <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/cf6910e7-5bfe-41af-a76e-075f9cf3754d" width="400px"><br>
-    <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/5b324c45-f454-4d85-9631-96ce2656a11d" width="400px"><br>
-    <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/cb450f35-3c78-41ce-a3ad-4b4d2b170bbc" width="400px"><br>
-    <img src = "https://github.com/sunny7319/Hands_MediaPipe_project/assets/112309620/c31eab14-084c-44b1-a46a-967d1b826017" width="400px"><br>
+    <img src = "https://github.com/user-attachments/assets/435dc7b3-1161-4dc1-b3f2-ee491ca75b9c" width="400px"><br>
+    <img src = "https://github.com/user-attachments/assets/06950dd2-5f4a-4739-9590-2d299fd9e058" width="400px"><br>
+    <img src = "https://github.com/user-attachments/assets/69d76b2a-ee8f-45f5-bbc0-12b5748da798" width="400px"><br>
+    <img src = "https://github.com/user-attachments/assets/5703465d-9699-437b-96d0-68a6789684c2" width="400px"><br>
+    <img src = "https://github.com/user-attachments/assets/0848ca3c-c32c-4a8c-93a7-1cf561a4e31b" width="400px"><br>
+    <img src = "https://github.com/user-attachments/assets/0ad5a6dc-8346-4a5b-8a64-d4bf68f8059f" width="400px"><br>
   </p>
 </details>
 <br>
