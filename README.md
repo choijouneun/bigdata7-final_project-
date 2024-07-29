@@ -189,10 +189,10 @@
   python main.py
   ```
 
-  #### !!주의 사항!!
-  첫 실행시 자동생성되는 user.json 등 json 파일을 임의 편집하면 오류가 발생할 수 있습니다.
+  #### ⚠️주의 사항⚠️
+  - 첫 실행시 자동생성되는 user.json 등 json 파일을 임의 편집하면 오류가 발생할 수 있습니다.
   
-  버전관리를 실행할 경우 version -> preprocess -> preprocessing.py에서 base_directory_1 = os.path.join(final_pdf_output_dir, "MATH_G3_2024_07_calculus") 이런식으로 파일명으로 경로설정!
+  - 버전관리를 실행할 경우 version -> preprocess -> preprocessing.py에서 base_directory_1 = os.path.join(final_pdf_output_dir, "MATH_G3_2024_07_calculus") 이런식으로 파일명으로 경로설정!
 
   <br>
 
