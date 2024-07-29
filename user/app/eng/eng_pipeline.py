@@ -4,7 +4,7 @@ from preprocess.eng_choice_preprocessing import Processor
 
 class Engpipeline:
     def __init__(self, image_path):
-        self.api_key = "sk-proj-3JUo4EwKOKPcoterMJVST3BlbkFJlrgUmwrvlEKN9Nlv3uik"
+        self.api_key = api_key 
         self.question = "내가 준 이미지내 텍스트만 출력해줘"
         self.image_path = image_path
         self.questioner_1 = OpenAIImageQuestioner(self.api_key)
