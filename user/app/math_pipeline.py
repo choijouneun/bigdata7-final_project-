@@ -4,7 +4,7 @@ from preprocess.math_choice_preprocessing import Processor
 
 class Mathpipeline:
     def __init__(self, image_path):
-        self.api_key = "sk-proj-3JUo4EwKOKPcoterMJVST3BlbkFJlrgUmwrvlEKN9Nlv3uik"
+        self.api_key = api_key 
         self.question =  """Role : 수학선생님
 
 Task : 이미지내 텍스트를 모두 추출해줘
