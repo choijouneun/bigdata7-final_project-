@@ -10,7 +10,7 @@ from preprocess.kor_combined import CombinedProcessor
 class ImageQuestionProcessingPipeline:
     def __init__(self, image_file):
         self.image_file = image_file
-        self.api_key = "sk-proj-3JUo4EwKOKPcoterMJVST3BlbkFJlrgUmwrvlEKN9Nlv3uik"  # API 키를 내부에 설정
+        self.api_key = api_key   # API 키를 내부에 설정
         self.base_directory = os.path.dirname(os.path.abspath(__file__))  # 현재 작업 디렉토리를 기본 디렉토리로 설정
         self.output_directory_1 = os.path.join(self.base_directory, "crop_pra")
         self.output_directory_2 = os.path.join(self.base_directory, "crop_pra_2")
