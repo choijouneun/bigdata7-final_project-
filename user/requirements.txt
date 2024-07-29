@@ -1,0 +1,25 @@
+pdf2image==1.17.0
+opencv-python==4.9.0.80
+pandas==2.2.2
+numpy==1.26.4
+pillow==10.3.0
+fastapi==0.111.0
+easyocr==1.7.1
+pytesseract==0.3.10
+pymupdf
+glob2==0.7
+pymysql==1.1.1
+uvicorn==0.30.1
+# sqlalchemy
+python-multipart==0.0.7
+boto3==1.34.142
+elasticsearch==8.14.0
+keras==3.4.1
+tensorflow==2.17.0
+torch==2.0.1
+torchvision==0.15.2
+transformers==4.42.3
+sentence-transformers==2.2.2
+nltk==3.8.1
+git+https://github.com/openai/CLIP.git
+python-bidi==0.4.2

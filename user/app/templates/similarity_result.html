@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>유사도</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+    <link rel="stylesheet" type="text/css" href="/static/similarity_style.css">
+</head>
+<body>
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+    <div id="content" style="display: none;">
+        <h1>유사문항 조회 결과</h1>
+        <a href="/delete_temp_images" title="home"><img src="/static/img/home.png" alt="Home"></a>
+        <h2>원본 문항</h2>
+        <div id="original_image">
+            <p>원본 이미지를 불러오는 중...</p>
+        </div>
+        <h2>검색 결과</h2>
+        <div id="results">
+            <p>유사문항 조회 결과를 불러오는 중입니다. 잠시만 기다려주세요!</p>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const loading = document.getElementById("loading");
+            const content = document.getElementById("content");
+            const resultsDiv = document.getElementById("results");
+            const originalImageDiv = document.getElementById("original_image");
+            const fileId = "{{ file_id }}"; // 서버로부터 전달받은 파일 ID
+            let intervalId;
+
+            // 원본 이미지가 존재하는지 확인하고, 존재하면 이미지를 로드하는 함수
+            function checkOriginalImage() {
+                const img = new Image();
+                img.src = `/static/temp_img/original.png`;
+                img.onload = function() {
+                    // 이미지가 성공적으로 로드된 경우
+                    originalImageDiv.innerHTML = "";
+                    originalImageDiv.appendChild(img);
+                    clearInterval(intervalId); // 주기적 요청 중지
+                };
+                img.onerror = function() {
+                    // 이미지가 아직 존재하지 않는 경우
+                    console.log("이미지를 찾을 수 없습니다. 다시 시도합니다...");
+                };
+            }
+
+            // 주기적으로 원본 이미지 존재 여부를 확인
+            intervalId = setInterval(checkOriginalImage, 5000); // 5초마다 확인
+
+            function fetchResults() {
+                fetch(`/get_results/${fileId}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.processed) {
+                            clearInterval(intervalId); // 결과를 모두 받아오면 주기적 요청을 중지합니다.
+                            resultsDiv.innerHTML = ""; // 기존 내용을 지우고 새로 추가합니다.
+
+                            if (data.data.length > 0) {
+                                data.data.sort((a, b) => b.similarity_value - a.similarity_value);
+
+                                const ul = document.createElement("ul");
+                                data.data.slice(0, 5).forEach(result => {
+                                // data.data.forEach(result => {
+                                    const li = document.createElement("li");
+                                    const p = document.createElement("p");
+
+                                    let subject = "";
+                                    if (result.subject === "questions_korean") {
+                                        subject = "국어";
+                                    } else if (result.subject === "questions_math") {
+                                        subject = "수학";
+                                    } else {
+                                        subject = "영어";
+                                    }
+
+                                    p.innerHTML = `
+                                        <span class="highlight year">${result.similarity_id.slice(2, 6)}년도</span>
+                                        <span class="highlight grade">${result.similarity_id[1]}학년</span>
+                                        <span class="highlight subject">${subject}</span>
+                                        <span class="highlight month">${result.similarity_id.slice(6, 8)}월</span>
+                                        <span class="highlight type">${result.file_name.includes("language_media") ? "언어와 매체" : result.file_name.includes("speech_writing") ? "화법과 작문" : result.file_name.includes("A") ? "가형" : result.file_name.includes("B") ? "나형" : result.file_name.includes("statistics") ? "확통" : result.file_name.includes("geometry") ? "기하" : result.file_name.includes("calculus") ? "미적" : "공통"}</span>
+                                        <span class="highlight number">${result.file_name.slice(-2)}번</span>
+                                        <span class="highlight score">${result.similarity_value.toFixed(5)}</span>
+                                    `;
+
+                                    li.appendChild(p);
+
+                                    if (result.file_name) {
+                                        const img = document.createElement("img");
+                                        img.src = `/static/temp_img/${result.file_name}.png`;
+                                        img.alt = "Image";
+                                        li.appendChild(img);
+                                    } else {
+                                        const errorText = document.createElement("p");
+                                        errorText.textContent = "Image could not be loaded.";
+                                        li.appendChild(errorText);
+                                    }
+
+                                    ul.appendChild(li);
+                                });
+
+                                resultsDiv.appendChild(ul);
+                            } else {
+                                resultsDiv.innerHTML = "<p>No images found.</p>";
+                            }
+                        }
+                    });
+            }
+
+            intervalId = setInterval(fetchResults, 5000); // 5초마다 결과를 요청합니다.
+
+            content.style.display = "block";
+            loading.style.display = "none";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>main page</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/nanumgothic.css">
+        <link rel="stylesheet" type="text/css" href="/static/style.css">
+        <style>
+            #loading {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.8);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 1000;
+                display: none; /* Initially hidden */
+            }
+
+            .spinner {
+                border: 16px solid #f3f3f3; /* Light grey */
+                border-top: 16px solid #3498db; /* Blue */
+                border-radius: 50%;
+                width: 120px;
+                height: 120px;
+                animation: spin 2s linear infinite;
+            }
+
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+        </style>
+        <script>
+            function updateSectionOptions() {
+                const subject = document.getElementById('pdf_subject').value;
+                const section = document.getElementById('section');
+                section.innerHTML = '';
+
+                let options = [];
+                if (subject === 'KOR') {
+                    options = ['언어와 매체', '화법과 작문'];
+                } else if (subject === 'MATH') {
+                    options = ['가형', '나형', '확률과 통계', '미적분', '기하'];
+                } else if (subject === 'ENG') {
+                    options = ['공통']; // 영어 과목의 경우 빈 문자열 추가
+                }
+
+                options.forEach(option => {
+                    const opt = document.createElement('option');
+                    opt.value = option;
+                    opt.innerHTML = option;
+                    section.appendChild(opt);
+                });
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                document.getElementById('pdf_subject').addEventListener('change', updateSectionOptions);
+                updateSectionOptions(); // 초기 로드 시 옵션 업데이트
+            });
+
+            function showLoading() {
+                document.getElementById("loading").style.display = "flex";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="loading">
+            <div class="spinner"></div>
+        </div>
+        <div class="similarity_form">
+            <h1>문항추천시스템</h1>
+            <form action="/upload_image" method="post" enctype="multipart/form-data">
+                <label for="subject">과목 선택:</label>
+                <select name="subject" id="subject">
+                    <option value="questions_korean">국어</option>
+                    <option value="questions_math">수학</option>
+                    <option value="questions_english">영어</option>
+                </select>
+                <br>
+                <label for="quiz_upload" class="quiz_upload_btn">
+                    파일 선택
+                </label>
+                <input type="file" id="quiz_upload" name="file" accept="image/*" required>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+        <hr>
+        <div class="s3_upload_form">
+            <h1>PDF 업로드</h1>
+            <form action="/upload_pdf" method="post" enctype="multipart/form-data">
+                <table>
+                    <tr>
+                        <th>과목</th>
+                        <td>
+                            <select name="subject" id="pdf_subject">
+                                <option value="KOR">국어</option>
+                                <option value="MATH">수학</option>
+                                <option value="ENG">영어</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>학년</th>
+                        <td>
+                            <select name="grade" id="grade">
+                                <option value="G1">1학년</option>
+                                <option value="G2">2학년</option>
+                                <option value="G3">3학년</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>연도</th>
+                        <td>
+                            <input type="text" name="year" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>월</th>
+                        <td>
+                            <select name="month" id="month">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>영역</th>
+                        <td>
+                            <!-- <input type="text" name="section" required> -->
+                            <select name="section" id="section">
+                                <!-- options will be dynamically populated based on subject selection -->
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <label for="pdf_upload" class="pdf_upload_btn">
+                    문제 파일 선택
+                </label>
+                <input type="file" id="pdf_upload" name="pdf_file" accept="application/pdf" required>
+                <label for="answer_upload" class="pdf_upload_btn">
+                    정답지 파일 선택
+                </label>
+                <input type="file" id="answer_upload" name="img_file" accept="image/*" required>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+    </body>
+</html>

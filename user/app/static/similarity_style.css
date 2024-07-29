@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h1, h2, p {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+h1 {
+    margin-bottom: 2vw;
+    margin-top: 50px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.highlight {
+    display: inline-block;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 4px;
+}
+
+.year { background-color: #ffcccb; } /* Red */
+.grade { background-color: #ccffcc; } /* Green */
+.subject { background-color: #ccccff; } /* Blue */
+.month { background-color: #ffffcc; } /* Yellow */
+.type { background-color: #ffccff; } /* Pink */
+.number { background-color: #ccffff; } /* Cyan */
+.score { background-color: #ffebcc; } /* Orange */
+
+img {
+    max-width: 100%;
+    max-height: 800px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+a img {
+    width: 40px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    cursor: pointer;
+}
