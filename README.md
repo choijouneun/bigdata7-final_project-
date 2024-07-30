@@ -227,12 +227,7 @@
 <details>
   <summary><b>🔠 English</b></summary>
   <p align='left'>
-    <img src = "https://github.com/user-attachments/assets/435dc7b3-1161-4dc1-b3f2-ee491ca75b9c" width="400px"><br>
-    <img src = "https://github.com/user-attachments/assets/06950dd2-5f4a-4739-9590-2d299fd9e058" width="400px"><br>
-    <img src = "https://github.com/user-attachments/assets/69d76b2a-ee8f-45f5-bbc0-12b5748da798" width="400px"><br>
-    <img src = "https://github.com/user-attachments/assets/5703465d-9699-437b-96d0-68a6789684c2" width="400px"><br>
-    <img src = "https://github.com/user-attachments/assets/0848ca3c-c32c-4a8c-93a7-1cf561a4e31b" width="400px"><br>
-    <img src = "https://github.com/user-attachments/assets/0ad5a6dc-8346-4a5b-8a64-d4bf68f8059f" width="400px"><br>
+    <img src="/main_page_14_-_-_Microsoft_Edge_2024-07-26_14-24-431-ezgif.com-video-to-gif-converter (1).gif" alt="animated" width="600">
   </p>
 </details>
 
